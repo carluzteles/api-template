@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/carluzteles/api-template/issues"
   },
-  "homepage": "https://github.com/carluzteles/api-template#readme"
+  "homepage": "https://github.com/carluzteles/api-template#readme",
+  "devDependencies": {
+    "typescript": "^4.9.3"
+  }
 }
