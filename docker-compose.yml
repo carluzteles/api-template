@@ -1,11 +1,16 @@
 version: '3'
 
 services:
-  api:
-    container_name: api
+  sap_api:
+    container_name: sap_api
     build:
       context: .
     restart: always
-    command: npm run dev
+    env_file:
+      - .env
+    volumes:
+      - ./:/usr/src/app
+      - /usr/src/app/node_modules
     ports:
-      - 3000:3000
+      - ${PORT}:${PORT}
+    command: npm run dev
